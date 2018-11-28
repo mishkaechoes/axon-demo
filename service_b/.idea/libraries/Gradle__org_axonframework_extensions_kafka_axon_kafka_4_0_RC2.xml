@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.axonframework.extensions.kafka:axon-kafka:4.0-RC2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.axonframework.extensions.kafka/axon-kafka/4.0-RC2/a81b5625a3362f7aa6e375e0e562ff5eeb583232/axon-kafka-4.0-RC2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.axonframework.extensions.kafka/axon-kafka/4.0-RC2/7143fa89264f4f92a1bb58dcd8170ad17a47b08f/axon-kafka-4.0-RC2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

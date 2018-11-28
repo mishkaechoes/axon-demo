@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.axonframework.extensions.springcloud:axon-springcloud:4.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.axonframework.extensions.springcloud/axon-springcloud/4.0/ec23f8a0c2cebdcf80f543d9c78db6ae0716a4b8/axon-springcloud-4.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.axonframework.extensions.springcloud/axon-springcloud/4.0/678cd38e6137f7b74325cf021ee70fd85f798eb4/axon-springcloud-4.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

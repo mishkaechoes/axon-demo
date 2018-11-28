@@ -1,0 +1,7 @@
+GET http://127.0.0.1:8083/actuator/info
+Accept: application/vnd.spring-boot.actuator.v2+json
+
+<> 2018-11-27T092837.200.txt
+
+###
+

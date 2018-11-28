@@ -1,0 +1,28 @@
+server:
+  port: 8083
+spring:
+  application:
+    name: service-a
+  datasource:
+    url: jdbc:postgresql://localhost:5432/service_a
+    username: user
+    password: password
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+axon:
+  kafka:
+    default-topic: axon-events
+    producer:
+      retries: 5
+      bootstrap-servers: localhost:9092
+      transaction-id-prefix: dtx
+    consumer:
+      group-id: dgroup
+      bootstrap-servers: localhost:9092
+  distributed:
+    enabled: true
+  serializer:
+    messages: jackson

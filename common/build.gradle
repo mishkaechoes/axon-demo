@@ -1,0 +1,63 @@
+buildscript {
+    ext {
+        kotlinVersion = '1.2.51'
+        springBootVersion = '2.0.5.RELEASE'
+    }
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:${kotlinVersion}")
+        classpath("org.jetbrains.kotlin:kotlin-allopen:${kotlinVersion}")
+    }
+}
+
+plugins {
+    // Apply the java-library plugin to add support for Java Library
+    id 'java-library'
+}
+
+jar.baseName = 'common'
+group 'com.michaelkofman'
+
+apply plugin: 'java'
+apply plugin: 'kotlin'
+
+sourceSets {
+    main.kotlin.srcDirs += "src"
+    test.kotlin.srcDirs += "test"
+    main.resources.srcDirs += "src/resources"
+    test.resources.srcDirs += "test/resources"
+}
+
+dependencies {
+    api 'org.apache.commons:commons-math3:3.6.1'
+    api('org.axonframework:axon-spring-boot-starter:4.0') {
+        exclude group: 'org.axonframework', module: 'axon-server-connector'
+    }
+
+    api('org.apache.commons:commons-lang3:3.8.1')
+    api('commons-validator:commons-validator:1.4.0')
+    api('com.vladmihalcea:hibernate-types-52:1.0.0')
+
+    implementation 'com.google.guava:guava:23.0'
+
+    testImplementation 'junit:junit:4.12'
+}
+
+repositories {
+    jcenter()
+    mavenCentral()
+}
+
+task copyJarToLibs {
+    ['../service_a/libs', '../service_b/libs'].each { dest ->
+        copy {
+            from 'build/libs/common.jar'
+            into dest
+        }
+    }
+}
+
+build.finalizedBy(copyJarToLibs)

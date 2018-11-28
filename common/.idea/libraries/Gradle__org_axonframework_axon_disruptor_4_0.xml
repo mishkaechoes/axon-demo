@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.axonframework:axon-disruptor:4.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.axonframework/axon-disruptor/4.0/aa5d31027fb5d1a7511990386899ebd24ea7b6b7/axon-disruptor-4.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.axonframework/axon-disruptor/4.0/18e15bfdc9f95f2dbf37bef6a1c0662c3c3837bf/axon-disruptor-4.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
